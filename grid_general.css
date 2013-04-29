@@ -1,0 +1,1329 @@
+@charset "euc-jp";
+/*--------------------------------------
+ *
+ * Yahoo fonts.css 2.7.0
+ * http://developer.yahoo.net/yui/license.txt
+ * Font size Adjustment.
+ * http://developer.yahoo.com/yui/examples/fonts/fonts-size_source.html
+ *
+ *-------------------------------------*/
+
+body {
+  font:13px/1.231 arial,helvetica,clean,sans-serif;
+	*font-size:small;
+	*font:x-small;
+}
+
+select,
+input,
+button,
+textarea{
+	font:99% arial,helvetica,clean,sans-serif;
+}
+
+table{
+	font-size:inherit;
+	font:100%;
+}
+
+pre,
+code,
+kbd,
+samp,
+tt{
+	font-family:monospace;
+	*font-size:108%;
+	line-height:100%;
+}
+
+/*--------------------------------------
+ *
+ * grid.css
+ * (c) 2011 OLELAB.
+ * URL : http://olelab.blog77.fc2.com/
+ *
+ *-------------------------------------*/
+
+/*========================================
+
+  Elements
+
+========================================*/
+
+html {
+	margin: 0;
+	padding: 0;
+	overflow-x: hidden;
+	overflow-y: scroll;
+}
+
+body {
+	color: #555;
+	background-color: #eee;
+	font-family: "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", Osaka, "MS PGothic", sans-serif;
+	margin: 0;
+	padding: 10px 0;
+	word-wrap: break-word;
+}
+
+/* Link
+---------------*/
+
+a:link {
+	color: #d02f67;
+}
+
+a:visited {
+	color: #999;
+}
+
+a:hover {
+	color: #000;
+	text-decoration: none;
+}
+
+.widget a:link {
+	color: #666;
+}
+
+.widget a:visited {
+	color: #999;
+}
+
+.widget a:hover {
+	color: #000;
+	text-decoration: none;
+}
+
+textarea:focus,
+input:focus {
+	border-color: #000;
+}
+
+a img {
+	border: none;
+}
+
+/* Text
+---------------*/
+
+h1 {
+	margin: 0;
+	padding: 15px 20px;
+	border: 1px solid #eee;
+	line-height: 1.5;
+	font-size: 167%;
+	color: #000;
+}
+
+h2 {
+	margin: 1em 0;
+	font-size: 131%;
+}
+
+h3 {
+	margin-top: 2em;
+	font-size: 116%;
+}
+
+p {
+	margin: 1em 0;
+}
+
+blockquote {
+	margin: 1em 20px;
+	padding: 8px 10px 5px 40px;
+	border: 1px solid #eee;
+	color: #444;
+	background: url(http://blog-imgs-46.fc2.com/o/l/e/olelab/grid-quote_f.gif) no-repeat 5px 5px;
+}
+
+blockquote  p {
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+pre,
+code {
+	font-family: Monaco, "Courier New", monospace;
+}
+
+pre {
+	padding: 15px 20px;
+	background-color: #f5f5f5;
+	overflow: auto;
+	width: 94%;
+	_width: 90%; /* for IE6 */
+	border-radius: 6px;
+	-webkit-border-radius: 6px;
+	-moz-border-radius: 6px;
+	-khtml-border-radius: 6px;
+}
+
+em {
+	font-weight: normal;
+	font-style: normal;
+	white-space: nowrap;
+	border: 1px solid #ccc;
+	padding: 0.1em 0.6em;
+	background: #f9f9f9;
+	border-radius: 3px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	-khtml-border-radius: 3px;
+}
+
+strong {
+	color: #993333;
+	font-size: 100%;
+	font-weight: normal;
+}
+
+/* List
+---------------*/
+
+ul,
+ol {
+	margin: 1em 40px;
+	padding: 0;
+	list-style-position: outside;
+}
+
+ul ul,
+ul ol,
+ol ul,
+ol ol {
+	margin: 0.3em 0 0.3em 15px;
+}
+
+/* form
+---------------*/
+
+form {
+	margin: 1em 0;
+	background-color: transparent;
+}
+
+fieldset {
+	padding: 1px 0;
+	border: none;
+}
+
+legend {
+	padding: 4px 10px;
+	background-color: #fff;
+}
+
+input,
+textarea {
+	padding: 0.2em;
+	border-width: 1px;
+	border-style: solid;
+	border-color: #ccc;
+	background-color: #fff;
+}
+
+input:hover,
+textarea:hover {
+	border-color: #999;
+}
+
+textarea {
+	padding: 0.5em 10px;
+}
+
+input.submit,
+input[type="submit"] {
+	cursor: pointer;
+	padding: 5px 10px;
+	border: none;
+	font-size: 85%;
+	font-weight: bold;
+	text-transform: uppercase;
+	color: #fff;
+	background-color: #000;
+}
+
+input.submit:hover,
+input[type="submit"]:hover {
+	background-color: #0bbcff;
+}
+
+input.radio,
+input[type="radio"] {
+	border: none;
+	background-color: transparent;
+	background-image: none;
+}
+
+/* Table
+---------------*/
+
+table {
+	background-color: #fff;
+	border: 1px solid #ddd;
+	border-collapse: collapse;
+	border-spacing: 0;
+	margin: 1em 0;
+}
+
+caption {
+	padding-bottom: 0.3em;
+}
+
+th,
+td {
+	padding: 0.3em 10px;
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+th {
+	background-color: #eee;
+	border: 1px solid #ddd;
+	color: #333;
+}
+
+td {
+	border: 1px solid #ddd;
+}
+
+/* Others
+---------------*/
+
+hr {
+	margin: 1.5em 0;
+	border: none;
+	border-top: 1px dotted #222;
+}
+
+/*========================================
+
+  grid
+
+========================================*/
+
+div#grid {
+	margin: 0;
+	overflow: visible;
+}
+
+div.layout {
+	margin: 5px;
+	padding: 0;
+	text-align: left;
+	width: 240px;
+}
+
+div.large_layout {
+	margin: 5px;
+	padding: 0;
+	text-align: left;
+	width: 740px;
+}
+
+div.middle_layout {
+	margin: 5px;
+	padding: 0;
+	text-align: left;
+	width: 490px;
+}
+
+.block {
+	background-color: #fff;
+	-moz-box-shadow: 0 0 5px #ccc;
+	-webkit-box-shadow: 0 0 5px #ccc;
+	box-shadow: 0 0 5px #ccc;
+	padding: 20px;
+}
+
+.boxshadow {
+	background-color: #000;
+	filter: progid:DXImageTransform.Microsoft.Blur(PixelRadius='3', MakeShadow='true', ShadowOpacity='0.10');
+	position: relative;
+	margin-left: -24px;
+	z-index: -2;
+}
+
+.boxshadow2 {
+	background-color: #000;
+	filter: progid:DXImageTransform.Microsoft.Blur(PixelRadius='3', MakeShadow='true', ShadowOpacity='0.30');
+	position: relative;
+	margin-left: -24px;
+	z-index: -2;
+}
+
+/*========================================
+
+  entry
+
+========================================*/
+
+div.entry {
+	font-size: 85%;
+	position: relative;
+}
+
+body.permanent div.entry {
+	font-size: 93%;
+}
+
+body.permanent div.reaction {
+	margin-top: 10px;
+}
+
+/* title
+---------------*/
+
+div.entry h2 {
+	font-size: 100%;
+	line-height: 1.7;
+	margin-top: 10px;
+}
+
+div.entry h2 a:link {
+	color: #0094ec;
+	text-decoration: none;
+}
+
+div.entry h2 a:visited {
+	color: #999;
+	text-decoration: none;
+}
+
+div.entry h2 a:hover {
+	color: #000;
+	text-decoration: underline;
+}
+
+body.permanent div.entry h2 {
+	color: #000;
+	font-size: 153.9%;
+}
+
+body.permanent div.reaction h2 {
+	font-family: Arial, Helvetica, sans-serif;
+	text-transform: uppercase;
+}
+
+/* EyeCatch
+---------------*/
+
+p.imgwrap {
+	background: url(http://blog-imgs-46.fc2.com/o/l/e/olelab/ajax-loader.gif) no-repeat 50% 50%;
+	margin: 0 0 1em; 
+	padding: 0;
+	text-align: center;
+}
+
+p.imgwrap a {
+	display: block;
+}
+
+body.permanent img.ec { display: none }
+
+xmp.teb {
+	display: none;
+}
+
+/* no
+---------------*/
+
+.no {
+	height: 10px;
+	left: 20px;
+	position: absolute;
+	top: 0;
+	width: 20px;
+}
+
+.no span {
+	display: block;
+	height: 100%;
+	text-indent: -32768px;
+	width: 100%;
+}
+
+.no .cat0  { background-color: #69d2e7 }
+.no .cat1  { background-color: #ecd078 }
+.no .cat2  { background-color: #556270 }
+.no .cat3  { background-color: #fe4365 }
+.no .cat4  { background-color: #f2c45a }
+.no .cat5  { background-color: #a7dbd8 }
+.no .cat6  { background-color: #d95b43 }
+.no .cat7  { background-color: #4ecdc4 }
+.no .cat8  { background-color: #fc9d9a }
+.no .cat9  { background-color: #bfb35a }
+.no .cat10 { background-color: #e0e4cc }
+.no .cat11 { background-color: #b7273f }
+.no .cat12 { background-color: #c4f062 }
+.no .cat13 { background-color: #f9cdad }
+.no .cat14 { background-color: #88a65e }
+.no .cat15 { background-color: #f38630 }
+.no .cat16 { background-color: #542437 }
+.no .cat17 { background-color: #ff6b6b }
+.no .cat18 { background-color: #c8c8a9 }
+.no .cat19 { background-color: #5e8c6a }
+.no .cat20 { background-color: #fa6900 }
+.no .cat21 { background-color: #53777a }
+.no .cat22 { background-color: #c44d58 }
+.no .cat23 { background-color: #83af9b }
+.no .cat24 { background-color: #6c1b13 }
+
+.reaction .no {
+	background: url(http://blog-imgs-46.fc2.com/o/l/e/olelab/grid-cmb.png) no-repeat;
+	height: 32px;
+	left: 10px;
+	position: absolute;
+	top: -5px;
+	width: 45px;
+}
+
+.reaction .no span {
+	color: #fff;
+	font-family: Arial;
+	font-size: 85%;
+	font-weight: bold;
+	line-height: 30px;
+	text-align: center;
+	text-indent: 0;
+}
+
+/* textBody
+---------------*/
+
+div.entry div.textBody {
+	line-height: 1.7;
+}
+
+div.entry div.textBody h3 {
+	background-color: #333;
+	color: #fff;
+	font-size: 138.5%;
+
+	margin: 1em -20px;
+	padding: 10px 20px;
+}
+
+div.entry div.textBody h4 {
+	background: url(http://blog-imgs-46.fc2.com/o/l/e/olelab/grid-h4.gif) no-repeat 0 50%;
+	color: #666;
+	font-size: 123.1%;
+	line-height: 14px;
+	padding-left: 20px;
+}
+
+
+/* info
+---------------*/
+
+div.entry ul.info {
+	background-color: #222;
+	border-radius: 4px;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	-khtml-border-radius: 4px;
+	color: #fff;
+	line-height: 1.7;
+	list-style: none;
+	margin: 1em 0 0;
+	padding: 5px 10px 10px;
+}
+
+div.entry ul.info a {
+	color: #fff;
+	line-height: 1.7;
+	text-decoration: none;
+}
+
+div.entry ul.info a:hover {
+	text-decoration: underline;
+}
+
+div#grid div.entry ul.info li {
+	border-bottom: 1px dotted #444;
+	padding-top: 5px;
+}
+
+/* reaction
+---------------*/
+
+div#grid div.reaction ol.list {
+	list-style: none;
+	margin: 20px 0;
+}
+
+div#grid div.reaction ol.list li {
+	border-bottom: 1px solid #eee;
+	padding: 10px 0;
+}
+
+div#grid div.reaction ol.list dl {
+	background: url(http://blog-imgs-46.fc2.com/o/l/e/olelab/grid-quote_r.gif) no-repeat right bottom;
+	overflow: hidden;
+	zoom: 1;
+}
+
+div#grid div.reaction ol.list dl dt {
+	background-color: #ddd;
+	float: left;
+	font-size: 85%;
+	padding: 5px 10px;
+	width: 140px;
+	zoom: 1;
+}
+
+div#grid div.reaction ol.list dl dd {
+	background: url(http://blog-imgs-46.fc2.com/o/l/e/olelab/grid-quote_f.gif) no-repeat 140px 0;
+	/background-position: 20px 0;
+	line-height: 1.7;
+	min-height: 21px;
+	padding-left: 170px;
+	/padding-left: 48px;
+	padding-right: 30px;
+	zoom: 1;
+}
+
+div#grid div.reaction ol.list dl dt p {
+}
+
+div#grid div.reaction ol.list dl dt p.name {
+	color: #000;
+	font-weight: bold;
+}
+
+div#grid div#comment ol.list dl dt {
+	overflow: hidden;
+	width: 192px;
+}
+
+div#grid div#comment ol.list dl dt a {
+	color: #000;
+}
+
+div#grid div#comment ol.list dl dt p.icon {
+	float: left;
+	margin-right: 10px;
+}
+
+div#grid div#comment ol.list dl dt p.icon img {
+	vertical-align: bottom;
+}
+
+div#grid div#comment ol.list dl dd {
+	background-position: 192px 0;
+	padding-left: 222px;
+	/background-position: 20px 0;
+	/padding-left: 48px;
+}
+
+div#grid div.reaction p.tburl input {
+	width: 90%;
+}
+
+div#grid div.reaction form.post {
+}
+
+div#grid div.reaction form.post legend {
+	display: none;
+}
+
+div#grid div.reaction form.post dt {
+	float: left;
+	font-size: 85%;
+	font-weight: bold;
+	line-height: 1.7;
+	margin: 0;
+	padding: 5px 0;
+	width: 8em;
+}
+
+div#grid div.reaction form.post dd {
+	margin: 0;
+	padding: 5px 0 5px 8em;
+}
+
+/*========================================
+
+  header
+
+========================================*/
+
+div#grid div#header {
+	background: #000 url(http://blog-imgs-46.fc2.com/o/l/e/olelab/grid-header.jpg) no-repeat;
+	-moz-box-shadow: 0 0 5px #999;
+	-webkit-box-shadow: 0 0 5px #999;
+	box-shadow: 0 0 5px #999;
+	color: #fff;
+	margin-bottom: 10px;
+	padding: 72px 20px 60px;
+	text-align: center;
+	vertical-align: middle;
+}
+
+div#grid div#header p.siteName a {
+	color: #fff;
+	font-size: 153.9%;
+	font-weight: bold;
+	text-decoration: none;
+}
+/*
+div#grid div#header p.siteName a:hover {
+}
+*/
+div#grid div#header p.description {
+	font-size: 85%;
+}
+
+/*========================================
+
+  footer
+
+========================================*/
+
+div#footer {
+	font-size: 85%;
+	margin: 0;
+	padding: 5px;
+	position: absolute;
+	text-align: right;
+}
+
+div#footer .block {
+	background-color: #222;
+	-moz-box-shadow: 0 0 5px #999;
+	-webkit-box-shadow: 0 0 5px #999;
+	box-shadow: 0 0 5px #999;
+	color: #fff;
+	padding: 10px 0;
+}
+
+div#footer a {
+	color: #fff;
+	text-decoration: none;
+}
+
+div#footer a:hover {
+	text-decoration: underline;
+}
+
+div#footer ul {
+	display: inline;
+	list-style: none;
+	margin: 0 20px 0 0;
+}
+
+div#footer li {
+	display: inline;
+}
+
+/*========================================
+
+  widget
+
+========================================*/
+
+div#grid div.widget {
+	font-size: 85%;
+	padding-bottom: 0;
+}
+
+div#grid div.separate {
+	margin-bottom: 10px;
+}
+
+div.widget dl {
+	margin: 0;
+	padding-bottom: 1px;
+}
+
+div.widget dl dt {
+	border-left: 7px solid #b0dce5;
+	color: #000;
+	font-weight: bold;
+	margin: 0 -20px 10px;
+	padding: 0.5em 20px 0.5em 13px;
+}
+
+div.widget dl dt.pn0  { border-color: #BCB968 }
+div.widget dl dt.pn1  { border-color: #8FA8A2 }
+div.widget dl dt.pn2  { border-color: #CCD4BD }
+div.widget dl dt.pn3  { border-color: #9E3B36 }
+div.widget dl dt.pn4  { border-color: #50553F }
+div.widget dl dt.pn5  { border-color: #6B8349 }
+div.widget dl dt.pn6  { border-color: #FCA055 }
+div.widget dl dt.pn7  { border-color: #7F4B61 }
+div.widget dl dt.pn8  { border-color: #A5C8DE }
+div.widget dl dt.pn9  { border-color: #C12331 }
+div.widget dl dt.pn10 { border-color: #347385 }
+div.widget dl dt.pn11 { border-color: #4F514E }
+div.widget dl dt.pn12 { border-color: #9EC6BE }
+div.widget dl dt.pn13 { border-color: #ECB3BA }
+div.widget dl dt.pn14 { border-color: #6A9674 }
+div.widget dl dt.pn15 { border-color: #A00F42 }
+div.widget dl dt.pn16 { border-color: #230946 }
+div.widget dl dt.pn17 { border-color: #E4760F }
+div.widget dl dt.pn18 { border-color: #9AC000 }
+div.widget dl dt.pn19 { border-color: #555020 }
+
+div.widget dl dd {
+	margin: 0 0 15px;
+	padding: 1px 0;
+}
+
+div.widget dl dd ul {
+	list-style: none;
+	margin: 5px -20px;
+}
+
+div.widget dl dd ul li {
+	border-bottom: 1px solid #eee;
+	color: #47617c;
+	display: block;
+}
+
+div.widget dl dd ul li a {
+	display: block;
+	line-height: 1.7;
+	padding: 5px 20px;
+	text-decoration: none;
+}
+
+div.widget dl dd ul li a:hover {
+	background-color: #47617c;
+	color: #fff;
+}
+
+div.widget dl dd ul ul {
+	margin-right: 15px;
+}
+
+div.widget dl dd ul ul li {
+	background: url(http://blog-imgs-46.fc2.com/o/l/e/olelab/grid-square.gif) no-repeat 10px 50%;
+	_background-position: 10px 40%;
+	border-bottom: none;
+	_padding-bottom: 2px;
+}
+
+/* Profile
+---------------*/
+
+div.widget dl dd.profile p {
+	background-color: #222;
+	border-radius: 4px;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	-khtml-border-radius: 4px;
+	color: #fff;
+	line-height: 1.7;
+	padding: 10px;
+}
+
+div.widget dl dd.profile p a {
+	color: #fff;
+	text-decoration: underline;
+}
+
+div.widget dl dd.profile p a:hover {
+	background-color: #666;
+	text-decoration: none;
+}
+
+div.widget dl dd.profile .plugin-myimage {
+	background-color: transparent;
+	margin-bottom: 10px;
+	text-align: center!important;
+	padding: 0;
+}
+
+/* Feeds
+---------------*/
+
+div.widget dl dd ul.feed {
+	margin-left: 10px;
+	list-style-type: none;
+	list-style-position: outside;
+}
+
+div.widget dl dd ul.feed li {
+	margin-left: 0;
+}
+
+div.widget dl dd ul.feed li a {
+	padding-left: 20px;
+	background: url(http://blog-imgs-46.fc2.com/o/l/e/olelab/FeedIcon-16.png) no-repeat;
+}
+
+/* Calendar
+---------------*/
+
+div.widget dl dd.calendar table,
+div.widget dl table.calender,
+div.widget dl #navical table {
+	border: none;
+	border-collapse: collapse;
+	border-spacing: 0;
+	font-size: 85%;
+	margin: 0 0 1em;
+	width: 100%;
+}
+
+div.widget dl dd.calendar table th,
+div.widget dl dd.calendar table td,
+div.widget dl table.calender th,
+div.widget dl table.calender td,
+div.widget dl #navical table th,
+div.widget dl #navical table td {
+	border: 1px solid #fff;
+	color: #fff;
+	padding: 0.5em 0.3em;
+	text-align: center;
+}
+
+div.widget dl dd.calendar table th,
+div.widget dl table.calender th,
+div.widget dl #navical table th {
+	background-color: #3c82d7;
+}
+
+div.widget dl dd.calendar table td,
+div.widget dl table.calender td,
+div.widget dl #navical table td {
+	background-color: #82bbff;
+}
+
+div.widget dl dd.calendar table td a,
+div.widget dl table.calender td a,
+div.widget dl #navical table td a {
+	background-color: #509fff;
+	color: #fff;
+	display: block;
+	margin: -0.5em -0.3em;
+	padding: 0.5em 0.3em;
+	text-decoration: none;
+}
+
+div.widget dl dd.calendar table td a:hover,
+div.widget dl table.calender td a:hover,
+div.widget dl #navical table td a:hover {
+	background-color: #264b78;
+}
+
+div.widget dl #navical table td.Mnavi a {
+	background-color: transparent;
+	display: inline;
+	margin: 0;
+	padding: 0;
+}
+
+/*  Category
+---------------*/
+
+div.widget dd.category {
+	line-height: 1.7;
+}
+
+/* div.widget dl dd >  
+---------------*/
+
+div.widget p {
+	margin: 0.3em 0;
+}
+
+div.widget dl dd ul ul {
+	margin-left: 15px;
+}
+
+div.widget dl dd dl {
+	margin: 0.3em 0;
+	padding: 0 10px;
+	border: 1px solid #eee;
+}
+
+div.widget dl dd dl dt {
+	font-weight: normal;
+}
+
+div.widget dl dd form {
+	margin: 0;
+	padding: 1px 5px;
+	border: none;
+}
+
+div.widget dl dd form legend {
+	display: none;
+}
+
+div.widget dl dd form input.inputField {
+	width: 45%;
+}
+
+div.widget dl dd form input.submit {
+	padding: 0.2em 2px;
+	font-size: 10px;
+}
+
+
+/*========================================
+
+  pager
+
+========================================*/
+
+.flip {
+	padding: 0!important;
+}
+
+.flip ul {
+	list-style: none;
+	margin: 10px 0 0;
+	overflow: hidden;
+	padding: 0;
+	zoom: 1;
+}
+
+.flip li {
+	width: 50%;
+	zoom: 1;
+}
+
+.flip li.newer {
+	float: left;
+}
+
+.flip li.newer a {
+	text-indent: -0.4em;
+}
+
+.flip li.older {
+	float: right;
+	text-align: right;
+}
+
+.flip li.older a {
+	margin-left: 298px;	
+}
+
+.flip a {
+	background-color: #333;
+	color: #fff;
+	display: block;
+	padding: 20px;
+	text-decoration: none;
+	width: 37px;
+}
+
+.flip a:hover {
+	background-color: #a73264;
+	color: #fff;
+}
+
+.flip .both li {
+	_width: 49%;
+}
+
+#pager {
+	list-style: none;
+	margin: 0;
+	overflow: hidden;
+	padding: 0!important;
+	zoom: 1;
+}
+
+#pager li {
+	float: left;
+	margin-right: 1px;
+	zoom: 1;
+}
+
+#pager li.active {
+	background-color: #333;
+	color: #fff;
+	font-weight: bold;
+	margin: 0 1px 0 0;
+	padding: 20px 1em;
+}
+
+#pager li a {
+	background-color: #f0f0f0;
+	background-color: #ddd\9;
+	color: #333;
+	display: block;
+	padding: 20px 1em;
+	text-decoration: none;
+}
+
+#pager li a:visited {
+	color: #999;
+}
+
+#pager li a:hover {
+	background-color: #a73264;
+	color: #fff;
+}
+
+
+/*========================================
+
+  return to pagetop
+
+========================================*/
+
+#return {
+	display: none;
+	height: 42px;
+	left: 100%;
+	margin-left: -54px;
+	position: fixed;
+	top: 50%;
+	width: 54px;
+}
+
+#return a {
+	background: url(http://blog-imgs-46.fc2.com/o/l/e/olelab/grid-return.png) no-repeat 0 0;
+	_background: none;
+	_filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://blog-imgs-46.fc2.com/o/l/e/olelab/grid-return.png',sizingMethod=image);
+	display: block;
+	height: 42px;
+	text-indent: -32768px;
+	width: 54px;
+	outline: none;
+}
+
+#return a:hover {
+	background-position: -54px 0;
+}
+
+/*========================================
+
+  fc2
+
+========================================*/
+
+.fc2_footer {
+	padding: 1em 0;
+}
+
+dl.relate_dl {
+	border: 1px solid #a21212;
+	magrin: 2em 0 0;
+}
+
+dl.relate_dl dt {
+	background-color: #a21212;
+	color: #fff;
+	padding: 0.3em 10px;
+}
+
+dl.relate_dl dd {
+	padding: 10px 0;
+}
+
+dl.relate_dl ul {
+	list-style: square;
+	margin: 0;
+}
+
+table.fc2_socialbtn,
+table.fc2_socialbtn th,
+table.fc2_socialbtn td{
+	border: none;
+}
+
+table.fc2_socialbtn td {
+	padding: 0 10px 0 0;
+}
+
+/*========================================
+
+  extension
+
+========================================*/
+
+/*  IconSelect
+---------------*/
+
+.selectimg {
+	background: #fff url(http://blog-imgs-46.fc2.com/o/l/e/olelab/icon-bgarrow.gif) no-repeat 149px 2px;
+	color: #000;
+	cursor: pointer;
+	font-size: 12px;
+	position: relative;
+	width: 168px;
+	margin-left: 2px;
+}
+
+.selectimg ol {
+	background-color: #fff;
+	border: 1px solid #ccc;
+	left: 0;
+	list-style: none;
+	margin: 0;
+	overflow: hidden;
+	padding: 0 1px 1px 0;
+	position: absolute;
+	top: 25px;
+}
+
+.selectimg ol li {
+	float: left;
+	margin: 1px 0 0 1px;
+	padding: 0;
+}
+
+.selectimg ol li img {
+	vertical-align: middle;
+}
+
+.selectimg div {
+	border: 1px solid #ccc;
+	line-height: 24px;
+	height: 24px;
+	padding: 0 10px;
+}
+
+
+.selectimg span {
+	background: url(http://blog-imgs-46.fc2.com/o/l/e/olelab/icon-sel.gif) no-repeat;
+	display: block;
+	height: 32px;
+	left: 2px; 
+	position: absolute;
+	top: 27px;
+	width: 32px;
+	z-index: 2;
+}
+
+/* blocklink
+---------------------------------------*/
+#grid .blocklink {
+	/*background-color: #666;*/
+	color: #fff;
+}
+
+#grid .blocklink a {
+	color: #fff;
+}
+
+/* listPager
+---------------------------------------*/
+
+.listPager {
+	list-style: none;
+	margin: 20px 0 -20px;
+	overflow: hidden;
+	padding: 0;
+	zoom: 1;
+}
+
+.listPager li {
+	background-color: #eee;	
+	cursor: pointer;
+	float: left;
+	margin-right: 10px;
+	padding: 5px 0.5em;
+	zoom: 1;
+}
+
+.listPager li.hover {
+	background-color: #19f;
+	color: #fff;
+}
+
+.listPager li.active {
+	background-color: #333;
+	color: #fff;
+	font-weight: bold;
+}
+
+.listPagerBottom {
+	_clear: both;
+	margin-top: 0;
+	margin-bottom: 20px;	
+}
+
+
+/* tComments...
+---------------------------------------*/
+
+#recentComments p {
+	margin: 0;
+	text-align: right;
+}
+
+#recentComments p img {
+	cursor: pointer;
+}
+
+#recentComments ul,#recentComments ul li {
+	margin: 0 !important;
+	padding: 0 !important;
+	border: 0 none !important;
+	display: list-item;
+	line-height: 1.4 !important;
+	list-style-type: none !important;
+	list-style-image: none !important;
+	background: none;
+	text-align: left;
+}
+
+#recentComments img,#recentComments img:hover {
+	margin: 0 !important;
+	padding: 0 !important;
+	border: 0 none !important;
+	background: none !important;
+	vertical-align: middle !important;
+}
+
+#recentComments span.newCmnt {
+	color: #ff0000;
+	font-size: 11px;
+}
+
+.widget .rcommentBody span.rcommentDate {
+	display: block !important;
+	font-weight: bold;
+	cursor: default !important;
+}
+
+.widget .rcommentTitle {
+	display: none !important;
+}
+
+.widget .rcommentEntry {
+}
+
+#recentComments ul li {
+	margin: 3px 0 !important;
+}
+
+#recentComments .rcommentDate {
+	line-height: 1.5;
+	cursor:pointer;
+}
+
+#recentComments li ul li {
+	margin: 0px !important;
+	padding: 1px 0 2px 20px !important;
+	background: url(http://blog-imgs-46.fc2.com/o/l/e/olelab/comA.gif) 4px -3px no-repeat !important;
+	font-size: 100% !important;
+}
+
+#recentComments li ul li a {
+	padding: 0 5px;
+}
+
+#recentComments li li.rcLast {
+	padding: 0 0 1px 20px !important;
+	background-position: 4px -311px !important;
+}
+
+#recentComments li li.rcFirstLast {
+	padding: 2px 0 1px 20px !important;
+	background-position: 4px -309px !important;
+}
+
+#recentComments li li.rcFirst {
+	padding: 2px 0 2px 20px !important;
+	background-position: 4px -2px !important;
+}
